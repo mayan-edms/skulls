@@ -27,7 +27,7 @@ usage()
 	echo ""
 	echo "Usage: $0 -b <board> [-i <image.rom>] [-c <chipname>] [-k <backup_filename>] [-f <flasher>] [-s <spispeed>]"
 	echo ""
-	echo " -b (x230|x230t|t430|t440p|t530|w530)	board to flash."
+	echo " -b (x230|x230t|t430|t440p|t530|t540p|w530)	board to flash."
 	echo " -f <hardware_flasher>   supported flashers: rpi, ch341a, FT232H, Tigard"
 	echo " -i <image>              path to image to flash"
 	echo " -c <chipname>           to use for flashrom"
@@ -108,6 +108,8 @@ elif [[ $BOARD == "t440p" ]] ; then
 	echo "Board: $BOARD"
 elif [[ $BOARD == "t530" ]] ; then
 	echo "Board: $BOARD"
+elif [[ $BOARD == "t540p" ]] ; then
+        echo "Board: $BOARD"
 elif [[ $BOARD == "w530" ]] ; then
 	echo "Board: $BOARD"
 else
